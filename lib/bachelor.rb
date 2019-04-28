@@ -60,6 +60,6 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  ages.map {|x| x.to_f}.each{|x| sum = sum + x}
+  ages.map {|x| x.to_i}.each{|x| sum = sum + x}
   sum / ages.size
 end
